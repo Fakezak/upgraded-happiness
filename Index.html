@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ZakXeno Modz - Connect</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="hacker-theme">
+  <div class="centered">
+    <h1>ZakXeno Modz</h1>
+    <p>Enter your Free Fire UID</p>
+    <input type="text" id="uid" placeholder="Enter UID..." />
+    <button onclick="connect()">Connect</button>
+  </div>
+
+  <script>
+    function connect() {
+      const uid = document.getElementById("uid").value;
+      if (uid.trim() !== "") {
+        localStorage.setItem("uid", uid);
+        window.location.href = "loader.html";
+      } else {
+        alert("Please enter a valid UID");
+      }
+    }
+  </script>
+</body>
+</html>
