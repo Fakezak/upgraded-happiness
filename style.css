@@ -1,0 +1,62 @@
+body.hacker-theme {
+  background: url('assets/hacker-bg.gif') center center no-repeat;
+  background-size: cover;
+  color: #0f0;
+  font-family: monospace;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.centered {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+input, button {
+  padding: 10px;
+  margin-top: 10px;
+  font-size: 16px;
+  background: #111;
+  border: 1px solid #0f0;
+  color: #0f0;
+  border-radius: 10px;
+}
+
+button:hover {
+  background-color: #0f0;
+  color: #000;
+}
+
+.mod-menu {
+  margin-top: 60px;
+  padding: 20px;
+  background-color: rgba(0,0,0,0.8);
+  border: 2px solid red;
+  display: inline-block;
+  text-align: left;
+  border-radius: 20px;
+  box-shadow: 0 0 10px red;
+}
+
+label {
+  display: block;
+  margin: 10px 0;
+}
+
+.loader-screen {
+  margin-top: 200px;
+  text-align: center;
+}
+
+.gear {
+  font-size: 50px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg);}
+  100% { transform: rotate(360deg);}
+}
